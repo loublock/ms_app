@@ -17,4 +17,4 @@ The buttons can also be replaced by a menu or a list if desired. The design of t
 
 The following flowchart illustrates the implementation of the navigation between the windows:
 
-.. image:: https://raw.githubusercontent.com/loublock/ms_app/src/ms_app/documents/multi_ui_files.png
+.. image:: https://github.com/loublock/ms_app/blob/6ab02c1222bc34ed250628860c2984bbfaba27e6/src/ms_app/documents/multi_ui_files.png
