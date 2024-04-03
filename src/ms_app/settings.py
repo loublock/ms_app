@@ -14,17 +14,16 @@ class Settings(QtWidgets.QWidget):
         self.s_show_main_page = s_show_main_page
 
         self.button_pressed()
-        self.show()
 
     def button_pressed(self):
         """
         Listens to a button press. When the button main page is pressed, call self.change_window().
         """
-        self.btnChangePage.clicked.connect(self.change_window)
+        self.btnChangePage.clicked.connect(self.change_window_main)
 
-    def change_window(self):
+    def change_window_main(self):
         """
         Closes this sub window and opens the main page again by emitting the signal.
         """
-        self.close()
         self.s_show_main_page.emit()
+        self.close()

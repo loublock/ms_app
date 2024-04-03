@@ -33,7 +33,7 @@
     <item row="1" column="0">
      <widget class="QPushButton" name="btnChangePage">
       <property name="text">
-       <string>Main Page</string>
+       <string>Social Media</string>
       </property>
      </widget>
     </item>

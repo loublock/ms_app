@@ -30,10 +30,17 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
+    <item row="2" column="0">
      <widget class="QPushButton" name="btnChangePage">
       <property name="text">
        <string>Main Page</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="btnChangePageContact">
+      <property name="text">
+       <string>Contact</string>
       </property>
      </widget>
     </item>

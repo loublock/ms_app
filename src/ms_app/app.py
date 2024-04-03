@@ -7,7 +7,7 @@ from PyQt6.QtCore import pyqtSignal
 import sys
 
 from ms_app.settings import Settings
-from ms_app.contact import Contact
+from ms_app.socialMedia import SocialMedia
 
 
 """
@@ -50,8 +50,7 @@ class MainPage(QtWidgets.QMainWindow):
 
         # creating the other windows by creating an object of their class
         # the passed signal is important!
-        self.social_media_window = ...
-        self.contact_window = Contact(self.s_show_main_page)
+        self.social_media_window = SocialMedia(self.s_show_main_page)
         self.settings_window = Settings(self.s_show_main_page)
 
         self.button_pressed()
@@ -62,7 +61,6 @@ class MainPage(QtWidgets.QMainWindow):
         Listens to a button press. Depending on the button pressed, a sub window is created.
         """
         self.btnChangePageSM.clicked.connect(self.change_window_sm)
-        self.btnChangePageContact.clicked.connect(self.change_window_contact)
         self.btnChangePageSettings.clicked.connect(self.change_window_settings)
 
     def change_window_sm(self):
@@ -70,16 +68,7 @@ class MainPage(QtWidgets.QMainWindow):
         Changes to the social media window via .show() command. The close() command closes the main window, otherwise
         both window would be shown.
         """
-        ...
-        # self.social_media_window.show()
-        # self.close()
-
-    def change_window_contact(self):
-        """
-        Changes to the contact window via .show() command. The close() command closes the main window, otherwise
-        both window would be shown.
-        """
-        self.contact_window.show()
+        self.social_media_window.show()
         self.close()
 
     def change_window_settings(self):
